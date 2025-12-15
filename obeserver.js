@@ -13,7 +13,7 @@ const observer = new IntersectionObserver((elements) => {
     threshold: [0, 0.1, 1]
 });
 
-const tags = document.querySelectorAll("h2, h3");
+const tags = document.querySelectorAll(".fade-in");
 
 tags.forEach((tag) => {
     observer.observe(tag);

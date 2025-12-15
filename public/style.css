@@ -21,6 +21,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+     z-index: 1000;
 }
 
 .nav-links {
@@ -28,19 +29,19 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(252, 244, 255);
+    background-color: #657B91;
     border-radius: 20px;
     padding: 6px 0px;
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0px 10px;
 }
 
 .nav-links li a:hover {
-    color: white;
+    color: #B1CBE6;
 }
 
 .content {
@@ -58,6 +59,14 @@ body {
     justify-content: center;
     background-image: url("background-img.jpg");
     background-size: cover;
+}
+
+.home-title h1 {
+    font-size: 80px;
+}
+
+.home-title p {
+    font-size: 20px;
 }
 
 .home-profile {
@@ -82,16 +91,21 @@ body {
     object-position: right;
 }
 
-.home-statement {
-    border: solid red;
-}
-
-.home-statement p {
-    text-align: left;
-}
 
 .about-div {
-    width: 100%;
+    border: solid red;
+    width: calc(100% - 40px);
+    padding: 20px;
+    color: #364E66;
+}
+
+h2 {
+    font-size: 50px;
+    background-color: #B0CBE6;
+    width: 25%;
+    text-align: center;
+    padding: 5px 0px;
+    color: #364E66;
 }
 
 .about-fin {
@@ -104,14 +118,61 @@ body {
 
 .projects-div {
     min-height: 100vh;
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    border: solid blue;
+    flex-wrap: wrap;
+}
+
+.projects div {
+    margin: 10px;
+    padding: 5px;
+    width: 30%;
+    height: 10%;
+    background-color: #16283C;
+    flex-direction: column;
+    align-content: center;
+    color: #B1CBE6;
+}
+
+.projects div img {
+    width: 100%;
+    max-height: 60%;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+.projects div h3 {
+    padding-left: 2.5%;
+}
+
+.app-links {
+    min-width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.app-links a {
+    background-color:#B1CBE6;
+    margin: 5px;
+    text-decoration: none;
+    color: #364E66;
+    text-align: center;
+    padding: 4px;
+}
+
+.app-links a:hover {
+    color: white;
 }
 
 .contact-div {
-    min-height: 100vh;
-    width: 100%;
-    border: solid blue;
+    width: calc(100% - 40px);
+    padding: 20px;
 }
 
 .in-view {
