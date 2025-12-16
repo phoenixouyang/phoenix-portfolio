@@ -184,6 +184,11 @@ h2 {
     max-width: 100px;
 }
 
+.freelance-div {
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+
 .in-view {
     animation: fade 1s 0.1s both;
 }
