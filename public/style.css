@@ -96,6 +96,13 @@ body {
     width: calc(100% - 40px);
     padding: 20px;
     color: #364E66;
+    min-height: 100vh;
+}
+
+.about-div p {
+    font-size: 20px;
+    padding: 0px 20px;
+    text-align: center;
 }
 
 h2 {
@@ -107,12 +114,17 @@ h2 {
     color: #364E66;
 }
 
-.about-fin {
-    min-height: 100vh;
+.collage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.about-dev {
-    min-height: 100vh;
+.collage img {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
 }
 
 .projects-div {
@@ -182,11 +194,6 @@ h2 {
     width: 5%;
     height: 5%;
     max-width: 100px;
-}
-
-.freelance-div {
-    width: calc(100% - 40px);
-    padding: 20px;
 }
 
 .in-view {
