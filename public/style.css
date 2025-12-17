@@ -95,7 +95,6 @@ body {
     width: calc(100% - 40px);
     padding: 20px;
     color: #364E66;
-    min-height: 100vh;
 }
 
 .about-div p {
@@ -127,7 +126,6 @@ h2 {
 }
 
 .projects-div {
-    min-height: 100vh;
     width: calc(100% - 40px);
     padding: 20px;
 }
