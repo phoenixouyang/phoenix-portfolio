@@ -95,6 +95,9 @@ body {
     width: calc(100% - 40px);
     padding: 20px;
     color: #364E66;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-div p {
@@ -128,18 +131,20 @@ h2 {
 .projects-div {
     width: calc(100% - 40px);
     padding: 20px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
 }
 
 .projects div {
     margin: 10px;
-    max-width: 400px;
     padding: 5px;
     width: 30%;
     height: 10%;
@@ -182,6 +187,9 @@ h2 {
 .contact-div {
     width: calc(100% - 40px);
     padding: 20px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .socials-div a {
