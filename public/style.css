@@ -25,6 +25,7 @@ body {
 
 .nav-links {
     width: 60%;
+    max-width: 1000px;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
