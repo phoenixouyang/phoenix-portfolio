@@ -164,6 +164,27 @@ h2 {
     padding-left: 5%;
 }
 
+.projects-div p {
+    font-size: 20px;
+    padding: 0px 20px;
+    text-align: center;
+    color: #364E66
+}
+
+.resume-div {
+    width: calc(100% - 40px);
+    padding: 20px;
+    color: #364E66;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume-div p {
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
 .app-links {
     min-width: 90%;
     display: flex;
@@ -209,6 +230,34 @@ h2 {
 
 .not-in-view {
     opacity: 0;
+}
+
+.contributions {
+    background-color: #B0CBE6;
+    width: 40%;
+}
+
+.experience {
+    background-color: #B0CBE6;
+    width: 35%;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: separate; 
+    border-spacing: 30px 10px;
+}
+
+td {
+    padding: 8px;
+}
+
+td:first-child {
+    
+}
+
+td:last-child {
+    text-align: left;
 }
 
 @media screen and (max-width: 768px) {
