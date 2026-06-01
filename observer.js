@@ -3,9 +3,7 @@ const observer = new IntersectionObserver((elements) => {
         if (e.isIntersecting) {
             e.target.classList.add("in-view");
             e.target.classList.remove("not-in-view");
-        } else {
-            e.target.classList.remove("in-view");
-            e.target.classList.add("not-in-view");
+            observer.unobserve(e.target);
         }
     });
 }, {
