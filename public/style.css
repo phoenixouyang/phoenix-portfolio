@@ -242,6 +242,47 @@ h2 {
     width: 35%;
 }
 
+.awards {
+    background-color: #B0CBE6;
+    width: 30%;
+}
+
+.awards-div {
+    width: calc(100% - 40px);
+    padding: 20px;
+    color: #364E66;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 30px;
+}
+
+.award-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background-color: #16283C;
+    color: #B1CBE6;
+    border-radius: 4px;
+}
+
+.award-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.award-detail {
+    font-size: 16px;
+    opacity: 0.85;
+}
+
 table {
     margin: 0 auto;
     border-collapse: separate; 
@@ -348,6 +389,16 @@ td:last-child {
     .socials-div img {
         width: 40px;
         height: 40px;
+    }
+
+    .awards {
+        width: 100%;
+    }
+
+    .award-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
     }
 
 }
