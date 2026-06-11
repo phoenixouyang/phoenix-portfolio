@@ -501,12 +501,13 @@ section {
     justify-content: space-between;
     align-items: baseline;
     gap: 1rem;
-    flex-wrap: wrap;
 }
 
 .timeline-role {
     font-size: clamp(0.95rem, 2.5vw, 1.05rem);
     color: var(--text);
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .timeline-role strong {
