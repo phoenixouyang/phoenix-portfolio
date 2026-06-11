@@ -414,8 +414,60 @@ section {
     color: #fff;
 }
 
-.contributions {
+.subsection-title {
     margin-top: var(--section-gap);
+}
+
+.projects.featured {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================
+   Skills
+   ============================================ */
+.skills-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.skill-group {
+    background-color: var(--surface);
+    border: 1px solid rgba(177, 203, 230, 0.5);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: 1.4rem 1.5rem 1.5rem;
+}
+
+.skill-group h3 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--navy-500);
+    margin: 0 0 1rem;
+}
+
+.skill-tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-tags li {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--navy-700);
+    background-color: var(--blue-100);
+    padding: 0.35em 0.9em;
+    border-radius: 999px;
 }
 
 /* ============================================
@@ -485,6 +537,20 @@ section {
     font-weight: 600;
     color: var(--text-muted);
     white-space: nowrap;
+}
+
+.timeline-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--navy-700);
+    background-color: var(--blue-100);
+    padding: 0.2em 0.75em;
+    border-radius: 999px;
+    margin-left: 0.5em;
+    vertical-align: middle;
 }
 
 /* ============================================
