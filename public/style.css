@@ -50,40 +50,17 @@ img {
 /* ============================================
    Animations
    ============================================ */
-@keyframes fade {
-    0% {
-        opacity: 0;
-        transform: translateY(2rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
-}
-
-.in-view {
-    animation: fade 0.8s 0.1s both;
-}
-
-.not-in-view {
-    opacity: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
     }
-    .in-view,
     .scroll-hint {
         animation: none;
-    }
-    .not-in-view {
-        opacity: 1;
     }
 }
 
