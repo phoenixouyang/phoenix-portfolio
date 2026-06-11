@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix Ouyang Portfolio</title>
+    <meta name="description" content="Phoenix Ouyang — Software Developer, ex-Financial Analyst. Projects, experience, and awards.">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,193 +17,247 @@
 <body>
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#home-div">Home</a></li>
             <li><a href="#about-div">About</a></li>
             <li><a href="#projects-div">Projects</a></li>
             <li><a href="#contact-div">Contact</a></li>
         </ul>
     </nav>
-    <div class="content">
-        <div class="home-div" id="home-div">
+
+    <main class="content">
+        <header class="home-div" id="home-div">
             <div class="home-profile">
                 <div class="home-title">
-                    <h1>Hi, I'm Phoenix.</h1>
-                    <p>Software Developer, ex-Financial Analyst.</p>
+                    <p class="home-eyebrow">Hello, world!</p>
+                    <h1>Hi, I'm <span class="accent-text">Phoenix</span>.</h1>
+                    <p class="home-subtitle">Software Developer, ex-Financial Analyst.</p>
+                    <div class="home-cta">
+                        <a class="btn btn-primary" href="#projects-div">View my work</a>
+                        <a class="btn btn-ghost" href="#contact-div">Get in touch</a>
+                    </div>
                 </div>
                 <div class="home-img">
-                    <img src="/public/profile-picture.jpeg" alt="profile picture">
+                    <img src="/public/profile-picture.jpeg" alt="Phoenix smiling with a hot drink on a snowy evening">
                 </div>
             </div>
-        </div>
+            <a class="scroll-hint" href="#about-div" aria-label="Scroll to About section">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+        </header>
 
-        <div class="about-div" id="about-div">
-            <h2 class="fade-in">About Me</h2>
+        <section class="about-div" id="about-div">
+            <h2 class="fade-in section-title">About Me</h2>
             <p class="fade-in">I'm a Software Developer with a genuine passion for building products that make life easier. I’ve always been drawn to logic and problem-solving, and I thrive in environments that challenge me to think critically and creatively. Tackling complex problems and turning ideas into functional solutions is what motivates me most.</p>
-            <p class="fade-in">Prior to my career transition, I spent over five years working as a Financial Analyst across a range of industries, including gaming, (Ubisoft), asset management (Brookfield) and consumer packaged goods (Lindt and Unilever). I felt the desire to move into a role where I could be directly involved with building products. So, I decided to quit my job and complete a Computer Programming Diploma to help kickstart my knowledge in software development, and build on my technical skills. Check out the links below for some of the things I'm building!</p>
+            <p class="fade-in">Prior to my career transition, I spent over five years working as a Financial Analyst across a range of industries, including gaming (Ubisoft), asset management (Brookfield) and consumer packaged goods (Lindt and Unilever). I felt the desire to move into a role where I could be directly involved with building products. So, I decided to quit my job and complete a Computer Programming Diploma to help kickstart my knowledge in software development, and build on my technical skills. Check out the links below for some of the things I'm building!</p>
             <p class="fade-in">Outside of coding, you'll usually find me baking, reading, cooking, running, gaming, traveling and puzzling. I make fantastic cookies and I'm a great teammate to have if you ever find yourself trapped in an escape room.</p>
             <div class="collage">
                 <img class="fade-in" src="/public/birthday-cake.jpg" alt="Birthday cake and matching smash cake">
                 <img class="fade-in" src="/public/tcs-marathon.jpeg" alt="TCS waterfront marathon finisher picture">
-                <img class="fade-in" src="/public/steak.jpeg" alt="steak with smash potatoes and beans">
-                <img class="fade-in" src="/public/egg-tarts.jpeg" alt="baked egg tarts in baking tray">
+                <img class="fade-in" src="/public/steak.jpeg" alt="Steak with smash potatoes and beans">
+                <img class="fade-in" src="/public/egg-tarts.jpeg" alt="Baked egg tarts in baking tray">
             </div>
-        </div>
-        <div class="projects-div" id="projects-div">
-            <h2 class="fade-in">Projects</h2>
+        </section>
+
+        <section class="projects-div" id="projects-div">
+            <h2 class="fade-in section-title">Projects</h2>
             <div class="projects">
-                <div class="fade-in">
-                    <img src="/public/thimble-logo.png" alt="thimble logo">
-                    <h3>Thimble</h3>
-                    <div class="app-links">
-                        <a href="https://github.com/phoenixouyang/thimble" target="_blank">Github Repo</a>
-                        <a href="https://devpost.com/software/thimble-xikmb2" target="_blank">Devpost</a>                      
+                <article class="project-card fade-in">
+                    <img src="/public/thimble-logo.png" alt="Thimble logo" loading="lazy">
+                    <div class="project-body">
+                        <h3>Thimble</h3>
+                        <div class="app-links">
+                            <a href="https://github.com/phoenixouyang/thimble" target="_blank" rel="noopener">GitHub Repo</a>
+                            <a href="https://devpost.com/software/thimble-xikmb2" target="_blank" rel="noopener">Devpost</a>
+                        </div>
                     </div>
-                </div>
-                <div class="fade-in">
-                    <img src="/public/nodejs.png" alt="Node.js logo">
-                    <h3>ask-node: RAG with ChromaDB</h3>
-                    <div class="app-links">
-                        <a href="https://github.com/phoenixouyang/ask-node" target="_blank">Github Repo</a>                      
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/nodejs.png" alt="Node.js logo" loading="lazy">
+                    <div class="project-body">
+                        <h3>ask-node: RAG with ChromaDB</h3>
+                        <div class="app-links">
+                            <a href="https://github.com/phoenixouyang/ask-node" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="commit-generator fade-in">
-                    <img src="/public/git-commit.png" alt="Git commit lines">
-                    <h3>Git Commit Generator</h3>
-                    <div class="app-links">
-                        <a href="https://github.com/phoenixouyang/git-commit-generator" target="_blank">Github Repo</a>
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/git-commit.png" alt="Git commit lines" loading="lazy">
+                    <div class="project-body">
+                        <h3>Git Commit Generator</h3>
+                        <div class="app-links">
+                            <a href="https://github.com/phoenixouyang/git-commit-generator" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="taskly fade-in">
-                    <img src="/public/taskly.png" alt="taskly web page preview">
-                    <h3>Taskly</h3>
-                    <div class="app-links">
-                        <a href="https://taskly-ten-beta.vercel.app/" target="_blank">Deployed Application</a>
-                        <a href="https://github.com/phoenixouyang/taskly" target="_blank">Github Repo</a>
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/taskly.png" alt="Taskly web page preview" loading="lazy">
+                    <div class="project-body">
+                        <h3>Taskly</h3>
+                        <div class="app-links">
+                            <a href="https://taskly-ten-beta.vercel.app/" target="_blank" rel="noopener">Deployed Application</a>
+                            <a href="https://github.com/phoenixouyang/taskly" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="weather-dashboard fade-in">
-                    <img src="/public/weather-dashboard.png" alt="weather dashboard page preview">
-                    <h3>Weather Dashboard</h3>
-                    <div class="app-links">
-                        <a href="https://phoenixouyang.github.io/weather-dashboard/" target="_blank">Deployed Application</a>
-                        <a href="https://github.com/phoenixouyang/weather-dashboard" target="_blank">Github Repo</a>                      
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/weather-dashboard.png" alt="Weather dashboard page preview" loading="lazy">
+                    <div class="project-body">
+                        <h3>Weather Dashboard</h3>
+                        <div class="app-links">
+                            <a href="https://phoenixouyang.github.io/weather-dashboard/" target="_blank" rel="noopener">Deployed Application</a>
+                            <a href="https://github.com/phoenixouyang/weather-dashboard" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="climate-solutions fade-in">
-                    <img src="/public/climate-solutions.png" alt="climate solutions page preview">
-                    <h3>Climate Solutions Application</h3>
-                    <div class="app-links">
-                        <a href="https://climate-solutions-drawdown.vercel.app/" target="_blank">Deployed Application</a>
-                        <a href="https://github.com/phoenixouyang/climate-solutions-application" target="_blank">Github Repo</a>                      
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/climate-solutions.png" alt="Climate solutions page preview" loading="lazy">
+                    <div class="project-body">
+                        <h3>Climate Solutions Application</h3>
+                        <div class="app-links">
+                            <a href="https://climate-solutions-drawdown.vercel.app/" target="_blank" rel="noopener">Deployed Application</a>
+                            <a href="https://github.com/phoenixouyang/climate-solutions-application" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="dictonary-application fade-in">
-                    <img src="/public/dictionary-app.jpg" alt="dictinary stock image">
-                    <h3>Dictionary Application</h3>
-                    <div class="app-links">
-                        <a href="https://github.com/phoenixouyang/dictionary-and-timer-application" target="_blank">Github Repo</a>                      
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/dictionary-app.jpg" alt="Dictionary stock image" loading="lazy">
+                    <div class="project-body">
+                        <h3>Dictionary Application</h3>
+                        <div class="app-links">
+                            <a href="https://github.com/phoenixouyang/dictionary-and-timer-application" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="olympic-search fade-in">
-                    <img src="/public/olympic-medal.jpg" alt="olympic medal stock image">
-                    <h3>Olympic Medal Search</h3>
-                    <div class="app-links">
-                        <a href="https://github.com/phoenixouyang/olympic-medal-search" target="_blank">Github Repo</a>                      
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/olympic-medal.jpg" alt="Olympic medal stock image" loading="lazy">
+                    <div class="project-body">
+                        <h3>Olympic Medal Search</h3>
+                        <div class="app-links">
+                            <a href="https://github.com/phoenixouyang/olympic-medal-search" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="assembly-line fade-in">
-                    <img src="/public/assembly-line.jpg" alt="assembly line stock image">
-                    <h3>Factory Assembly Line</h3>
-                    <div class="app-links">
-                        <a href="https://github.com/phoenixouyang/factory-assembly-line" target="_blank">Github Repo</a>                      
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/assembly-line.jpg" alt="Assembly line stock image" loading="lazy">
+                    <div class="project-body">
+                        <h3>Factory Assembly Line</h3>
+                        <div class="app-links">
+                            <a href="https://github.com/phoenixouyang/factory-assembly-line" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="pr-explain fade-in">
-                    <img src="/public/pull-request.png" alt="Github PR image">
-                    <h3>Github PR Explainer</h3>
-                    <div class="app-links">
-                        <a href="https://github.com/phoenixouyang/github-pr-explainer" target="_blank">Github Repo</a>
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/pull-request.png" alt="GitHub PR image" loading="lazy">
+                    <div class="project-body">
+                        <h3>GitHub PR Explainer</h3>
+                        <div class="app-links">
+                            <a href="https://github.com/phoenixouyang/github-pr-explainer" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="flashcard-generator fade-in">
-                    <img src="/public/Flashcards.jpg" alt="Flashcard image">
-                    <h3>Flashcard Generator</h3>
-                    <div class="app-links">
-                        <a href="https://github.com/phoenixouyang/flashcard-generator" target="_blank">Github Repo</a>
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/Flashcards.jpg" alt="Flashcard image" loading="lazy">
+                    <div class="project-body">
+                        <h3>Flashcard Generator</h3>
+                        <div class="app-links">
+                            <a href="https://github.com/phoenixouyang/flashcard-generator" target="_blank" rel="noopener">GitHub Repo</a>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
 
-            <h2 class="fade-in contributions">Contributions</h2>
-            <p class="fade-in">Projects I've contributed to as a freelance dev!</p>
+            <h2 class="fade-in section-title contributions">Contributions</h2>
+            <p class="fade-in section-lede">Projects I've contributed to as a freelance dev!</p>
             <div class="projects">
-                <div class="fade-in">
-                    <img src="/public/playqueens.png" alt="Image of queens game">
-                    <h3>Play Queens Game</h3>
-                    <div class="app-links">
-                        <a href="https://www.playqueensgame.com/" target="_blank">Deployed Site</a>
+                <article class="project-card fade-in">
+                    <img src="/public/playqueens.png" alt="Image of queens game" loading="lazy">
+                    <div class="project-body">
+                        <h3>Play Queens Game</h3>
+                        <div class="app-links">
+                            <a href="https://www.playqueensgame.com/" target="_blank" rel="noopener">Deployed Site</a>
+                        </div>
                     </div>
-                </div>
-                <div class="fade-in">
-                    <img src="/public/nytstrands.png" alt="Image of NYT strands">
-                    <h3>NYT Strands</h3>
-                    <div class="app-links">
-                        <a href="https://www.playstrandsnyt.com/" target="_blank">Deployed Site</a>
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/nytstrands.png" alt="Image of NYT strands" loading="lazy">
+                    <div class="project-body">
+                        <h3>NYT Strands</h3>
+                        <div class="app-links">
+                            <a href="https://www.playstrandsnyt.com/" target="_blank" rel="noopener">Deployed Site</a>
+                        </div>
                     </div>
-                </div>
-                <div class="fade-in">
-                    <img src="/public/minisodoku.png" alt="Image of Mini sodoku">
-                    <h3>Mini Sodoku</h3>
-                    <div class="app-links">
-                        <a href="https://www.playminisudoku.com/" target="_blank">Deployed Site</a>
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/minisodoku.png" alt="Image of Mini sudoku" loading="lazy">
+                    <div class="project-body">
+                        <h3>Mini Sudoku</h3>
+                        <div class="app-links">
+                            <a href="https://www.playminisudoku.com/" target="_blank" rel="noopener">Deployed Site</a>
+                        </div>
                     </div>
-                </div>
-                <div class="fade-in">
-                    <img src="/public/minicrossword.png" alt="Image of mini crossword">
-                    <h3>Mini Crossword</h3>
-                    <div class="app-links">
-                        <a href="https://www.playminicrossword.com/" target="_blank">Deployed Site</a>
+                </article>
+                <article class="project-card fade-in">
+                    <img src="/public/minicrossword.png" alt="Image of mini crossword" loading="lazy">
+                    <div class="project-body">
+                        <h3>Mini Crossword</h3>
+                        <div class="app-links">
+                            <a href="https://www.playminicrossword.com/" target="_blank" rel="noopener">Deployed Site</a>
+                        </div>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="resume-div fade-in" id="resume-div">
-            <h2 class="experience">Experience</h2>
-            <table>
-                <tr>
-                    <td>Freelance Developer</td>
-                    <td>December 2025 - Present</td>
-                </tr>
-                <tr>
-                    <td><strong>Ubisoft Toronto</strong>, Financial Analyst</td>
-                    <td>September 2021 - December 2024</td>
-                </tr>
-                <tr>
-                    <td><strong>Lindt & Sprungli</strong>, Financial Analyst</td>
-                    <td>November 2020 - September 2021</td>
-                </tr>
-                <tr>
-                    <td><strong>Lindt & Sprungli</strong>, Pricing and Trade Spend Analyst</td>
-                    <td>June 2019 - November 2020</td>
-                </tr>
-                <tr>
-                    <td><strong>Unilever</strong>, Business Analyst Co-op</td>
-                    <td>January 2018 - April 2018</td>
-                </tr>
-                <tr>
-                    <td><strong>Brookfield Asset Management</strong>, Corporate Accountant Co-op</td>
-                    <td>April 2017 - August 2017</td>
-                </tr>
-                <tr>
-                    <td><strong>RBC Wealth Management</strong>, Summer Intern</td>
-                    <td>May 2016 - August 2016</td>
-                </tr>
-            </table>
+        </section>
 
+        <section class="resume-div fade-in" id="resume-div">
+            <h2 class="section-title">Experience</h2>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-role">Freelance Developer</span>
+                        <span class="timeline-date">December 2025 – Present</span>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-role"><strong>Ubisoft Toronto</strong> · Financial Analyst</span>
+                        <span class="timeline-date">September 2021 – December 2024</span>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-role"><strong>Lindt &amp; Sprungli</strong> · Financial Analyst</span>
+                        <span class="timeline-date">November 2020 – September 2021</span>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-role"><strong>Lindt &amp; Sprungli</strong> · Pricing and Trade Spend Analyst</span>
+                        <span class="timeline-date">June 2019 – November 2020</span>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-role"><strong>Unilever</strong> · Business Analyst Co-op</span>
+                        <span class="timeline-date">January 2018 – April 2018</span>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-role"><strong>Brookfield Asset Management</strong> · Corporate Accountant Co-op</span>
+                        <span class="timeline-date">April 2017 – August 2017</span>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-role"><strong>RBC Wealth Management</strong> · Summer Intern</span>
+                        <span class="timeline-date">May 2016 – August 2016</span>
+                    </div>
+                </li>
+            </ol>
+        </section>
 
-        </div>
-        <div class="awards-div fade-in" id="awards-div">
-            <h2 class="awards">Awards</h2>
+        <section class="awards-div fade-in" id="awards-div">
+            <h2 class="section-title">Awards</h2>
             <div class="awards-list">
                 <div class="award-item">
                     <span class="award-title">Skills Ontario Coding 2026</span>
@@ -217,18 +272,31 @@
                     <span class="award-detail">President's Honour List</span>
                 </div>
             </div>
-        </div>
-        <div class="contact-div fade-in" id="contact-div">
-            <h2>Contact</h2>
-            <div class="socials-div">
-                <a href="https://github.com/phoenixouyang" target="_blank"><img src="/public/github-icon.png" alt="github icon"></a>
-                <a href="https://www.linkedin.com/in/phoenixouyang/" target="_blank"><img src="/public/linkedin-icon.png" alt=""></a>
-                <a href="https://www.instagram.com/pholovesbaking/" target="_blank"><img src="/public/instagram-icon.png" alt=""></a>
-            </div>
-        </div>
-    
+        </section>
 
-    </div>
+        <section class="contact-div fade-in" id="contact-div">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-lede">Want to work together, or just say hi? Find me here:</p>
+            <div class="socials-div">
+                <a class="social-link" href="https://github.com/phoenixouyang" target="_blank" rel="noopener" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14 0 1.54-.02 2.78-.02 3.16 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                    <span>GitHub</span>
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/phoenixouyang/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a class="social-link" href="https://www.instagram.com/pholovesbaking/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.39A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.8.72 1.48 1.39 2.13a5.88 5.88 0 0 0 2.13 1.39c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.39 5.88 5.88 0 0 0 1.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.39-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.15A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2026 Phoenix Ouyang · Built with plain HTML &amp; CSS</p>
+        </footer>
+    </main>
 
     <script src="/observer.js"></script>
 </body>
