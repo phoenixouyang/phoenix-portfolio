@@ -11,7 +11,8 @@ I'm a Software Developer with a background in financial analysis — previously 
 ## How It's Built
 
 - **HTML5** — accessible landmark structure (`nav`, `main`, `section`, `footer`)
-- **CSS** — design tokens via custom properties, CSS Grid with `auto-fit`/`minmax()` for self-reflowing card layouts, and fluid typography with `clamp()` so text scales smoothly across every viewport
+- **CSS** — design tokens via custom properties, CSS Grid with `auto-fit`/`minmax()` for self-reflowing card layouts, fluid typography with `clamp()`, and an animated aurora background in the hero using keyframe-driven radial gradient blobs
+- **Vanilla JavaScript** — a lightweight typewriter effect (`typewriter.js`) that cycles through phrases in the hero using `setTimeout`
 - **Inter** typeface via Google Fonts
 
 ## Featured Projects
