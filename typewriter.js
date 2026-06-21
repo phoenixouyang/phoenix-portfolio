@@ -2,6 +2,8 @@ const phrases = [
     "Software Developer.",
     "AI Builder.",
     "ex-Financial Analyst.",
+    "Excel Refugee.",
+    "Escape Room Veteran.",
     "Baker Extraordinaire.",
 ];
 
