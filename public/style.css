@@ -179,7 +179,7 @@ section {
     position: absolute;
     inset: 0;
     filter: blur(72px);
-    opacity: 0.75;
+    opacity: 0.85;
     z-index: 0;
 }
 
@@ -191,43 +191,46 @@ section {
 .aurora-blob--1 {
     width: clamp(400px, 65vw, 720px);
     height: clamp(400px, 65vw, 720px);
-    background: radial-gradient(circle, rgba(91, 141, 239, 0.7) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(91, 141, 239, 0.8) 0%, transparent 70%);
     top: -20%;
     left: -15%;
-    animation: aurora-1 14s ease-in-out infinite alternate;
+    animation: aurora-1 8s ease-in-out infinite;
 }
 
 .aurora-blob--2 {
     width: clamp(350px, 55vw, 620px);
     height: clamp(350px, 55vw, 620px);
-    background: radial-gradient(circle, rgba(157, 123, 234, 0.65) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(157, 123, 234, 0.75) 0%, transparent 70%);
     bottom: -15%;
     right: 5%;
-    animation: aurora-2 18s ease-in-out infinite alternate;
+    animation: aurora-2 11s ease-in-out infinite;
 }
 
 .aurora-blob--3 {
     width: clamp(280px, 45vw, 520px);
     height: clamp(280px, 45vw, 520px);
-    background: radial-gradient(circle, rgba(233, 143, 196, 0.6) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(233, 143, 196, 0.75) 0%, transparent 70%);
     top: 25%;
     right: -10%;
-    animation: aurora-3 11s ease-in-out infinite alternate;
+    animation: aurora-3 7s ease-in-out infinite;
 }
 
 @keyframes aurora-1 {
-    from { transform: translate(0, 0) scale(1); }
-    to   { transform: translate(12%, 8%) scale(1.18); }
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(25%, 18%) scale(1.15); }
+    100% { transform: translate(0, 0) scale(1); }
 }
 
 @keyframes aurora-2 {
-    from { transform: translate(0, 0) scale(1); }
-    to   { transform: translate(-10%, -10%) scale(1.12); }
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(-22%, -18%) scale(1.12); }
+    100% { transform: translate(0, 0) scale(1); }
 }
 
 @keyframes aurora-3 {
-    from { transform: translate(0, 0) scale(1.05); }
-    to   { transform: translate(-8%, 14%) scale(0.88); }
+    0%   { transform: translate(0, 0) scale(1); }
+    50%  { transform: translate(-20%, 22%) scale(0.88); }
+    100% { transform: translate(0, 0) scale(1); }
 }
 
 .home-profile {
