@@ -1,7 +1,7 @@
 const phrases = [
     "Software Developer.",
-    "AI Builder.",
     "ex-Financial Analyst.",
+    "Self-Proclaimed AI Expert.",
     "Excel Refugee.",
     "Escape Room Veteran.",
     "Baker Extraordinaire.",
