@@ -374,6 +374,13 @@ section {
     color: var(--text);
 }
 
+.inline-emoji {
+    height: 2em;
+    width: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .collage {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
